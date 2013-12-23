@@ -1,0 +1,39 @@
+body { padding-top: 20px; }
+
+.container {
+  width: 610px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.column {
+  margin-right: 20px;
+  float: left;
+}
+
+.six-columns {
+  width: 400px;
+}
+
+.three-columns {
+  width: 188px;
+  background-color: #FFFBE4;
+  border: 1px solid #C9BC8F;
+  float: right;
+  margin: 20px 0 0 0;
+}
+
+ol {
+  list-style: none;
+}
+
+.overlay {
+  width: 630px;
+  background: transparent url("grid-overlay.png");
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -315px;
+  height: 300px;
+  opacity: 0.3;
+}

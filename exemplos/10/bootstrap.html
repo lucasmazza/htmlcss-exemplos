@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang='pt-BR'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Bootstrap</title>
+  <link rel='stylesheet' href='bootstrap-3.0.2.css'>
+  <script src='/prefixfree.min.js'></script>
+</head>
+<body style='padding: 50px'>
+
+  <form class='form-horizontal' style='width:450px;'>
+    <h1>Exemplo do Bootstrap</h1>
+
+    <div class='form-group'>
+      <label for='email'>E-mail</label>
+      <div class='controls'>
+        <input type='email' id='email' class='form-control'>
+
+        <p class='help-block'>Usaremos o seu e-mail para responder a sua mensagem! Nada de spams.</p>
+      </div>
+    </div>
+
+    <div class='form-group'>
+      <label for='subject'>Text input</label>
+      <div class='controls'>
+        <input type='text' id='subject' class='form-control'>
+        <p class='help-block'>Nos diga qual é o seu problema ou idéia.</p>
+      </div>
+    </div>
+
+    <div class='form-group'>
+      <label for='content'>Mensagem</label>
+      <div class='controls'>
+        <textarea id='content' class='form-control'></textarea>
+        <p class='help-block'>Escreva a sua mensagem para a equipe do site.</p>
+      </div>
+    </div>
+
+    <div class='form-actions'>
+      <button type='submit' class='btn btn-primary'>Enviar mensagem</button>
+    </div>
+  </form>
+</body>
+</html>

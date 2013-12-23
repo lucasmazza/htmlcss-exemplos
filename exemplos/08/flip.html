@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang='pt-BR'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Formulários com Flip Card</title>
+  <link rel='stylesheet' href='../vendor/normalize.css'>
+  <link rel='stylesheet' href='flip.css'>
+  <script src='../vendor/prefixfree.min.js'></script>
+</head>
+<body>
+
+  <blockquote>
+    <p>
+      Transição entre 2 formulários no mesmo container usando uma animação 3D.
+    </p>
+
+    <p>Para alterar o sentido da animação - de horizontal para vertical - basta renomenar o "rotateY" por "rotateX" no CSS.
+    </p>
+  </blockquote>
+
+
+  <div class='container'>
+    <div class='card'>
+      <section class='signup'>
+        <form>
+          <h2>Cadastre-se agora!</h2>
+          <p>
+            <label for='..account_email'..>E-mail</label>
+            <input type='email' id='..account_email'..>
+          </p>
+          <p>
+            <label for='..account_password'..>Senha</label>
+            <input type='password' id='..account_password'..>
+          </p>
+          <p>
+            <label for='..account_password_confirmation'..>Confirme a sua senha</label>
+            <input type='password' id='..account_password_confirmation'..>
+          </p>
+          <p><button>Enviar!</button></p>
+          <a href='javascript:;' class='toggle'>Já estou cadastrado no site</a>
+        </form>
+      </section>
+
+      <section class='signin'>
+        <form>
+          <h2>Entrar no site</h2>
+          <p>
+            <label for='..user_email'..>E-mail</label>
+            <input type='email' id='..user_email'..>
+          </p>
+          <p>
+            <label for='..user_password'..>Senha</label>
+            <input type='password' id='..user_password'..>
+          </p>
+          <p>
+            <button>Enviar!</button>
+          </p>
+          <a href='javascript:;' class='toggle'>Quero me cadastrar</a>
+        </form>
+      </section>
+    </div>
+  </div>
+
+
+  <script src='../vendor/jquery.min.js'..></script>
+  <script>
+  jQuery(function($) {
+    $('section').on('click', 'a', function(e) {
+      $('.card').toggleClass('flipped');
+    })
+  });
+  </script>
+</body>
+</html>

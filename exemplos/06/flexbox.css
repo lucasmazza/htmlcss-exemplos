@@ -1,0 +1,22 @@
+body { padding: 20px; }
+
+.flexbox {
+  display: flex;
+  height: 60px;
+  width: 300px;
+}
+.box {
+  color: #FFF;
+  display: block;
+  flex:  auto;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.one { background-color: #8820DD; }
+.two { background-color: #2BB15A; }
+.three { background-color: #755322; }
+.four { background-color: #02A3A3; }
+.five { background-color: #C6363D; }

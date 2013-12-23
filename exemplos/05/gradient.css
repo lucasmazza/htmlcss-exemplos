@@ -1,0 +1,30 @@
+body {
+  padding: 20px;
+}
+
+div {
+  font-weight: bold;
+  height: 50px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+  width: 220px;
+}
+
+.blue {
+  background-color: #4377FA;
+  background-image: linear-gradient(to bottom, #4377FA, #0537B7);
+}
+
+.reverse-blue {
+  background-image: linear-gradient(to bottom, #0537B7, #4377FA);
+}
+
+.omg-pink {
+  background-image: linear-gradient(to bottom left, #FC0050, #FF79A3);
+}
+
+.stops {
+  background-image: linear-gradient(to bottom, #F5B951 48%, #F2A31C 56%);
+}

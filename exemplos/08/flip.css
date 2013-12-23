@@ -1,0 +1,52 @@
+body {
+  padding: 30px;
+}
+
+.container {
+  height: 300px;
+  perspective: 500px;
+  position: relative;
+  width: 200px;
+}
+
+form {
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  border: 1px solid #CCC;
+  box-shadow: inset 2px 2px 2px #EEE;
+  font-size: 0.9em;
+  padding: 2px 5px;
+}
+
+.card {
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  width: 100%;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card section {
+  backface-visibility: hidden;
+  background-color: #FFF;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.signup {
+  transform: rotateY(180deg);
+}

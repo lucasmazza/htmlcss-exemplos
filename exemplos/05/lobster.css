@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url(lobster.woff) format('woff');
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+h1.cursive {
+  font-family: cursive;
+}

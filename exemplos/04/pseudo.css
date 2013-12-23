@@ -1,0 +1,100 @@
+body { padding: 40px; }
+
+.help {
+  background-color: #F1EFE6;
+  border: 1px solid #D3CDAE;
+  font-size: 0.9em;
+  padding: 10px;
+  position: relative;
+  width: 300px;
+}
+
+.help::before {
+  border-color: transparent #D3CDAE transparent transparent;
+  border-style: solid;
+  border-width: 14px;
+  content: '';
+  left: -28px;
+  margin-top: -14px;
+  position: absolute;
+  top: 50%;
+}
+
+blockquote {
+  color: #444;
+  font-style: italic;
+}
+
+blockquote::before, blockquote::after {
+  color: #000;
+  font-size: 3em;
+}
+
+blockquote::before {
+  content: "\201C";
+}
+
+blockquote::after {
+  content: "\201D";
+}
+
+.focus::after {
+  color: #990000;
+  margin-left: 10px;
+  content: '← ←';
+}
+
+.focus::before {
+  color: #990000;
+  margin-right: 10px;
+  content: '→ →';
+}
+
+.tip::before {
+  content: '\261E';
+  margin-right: 10px;
+  color: #666;
+}
+
+section {
+  border: 1px solid #000;
+  height: 100px;
+  margin: 40px auto;
+  width: 400px;
+}
+
+h1 {
+  background-color: #990000;
+  color: #FFF;
+  font-size: 1.2em;
+  left: -10px;
+  padding: 5px 0;
+  position: relative;
+  text-align: center;
+  width: 420px;
+}
+
+
+h1::before {
+  border-color: transparent #7C0000 #7C0000 transparent;
+  border-style: solid;
+  border-width: 5px;
+  content: '';
+  left: 0;
+  position: absolute;
+  top: -10px;
+}
+
+h1::after {
+  border-color: transparent transparent #7C0000 #7C0000;
+  border-style: solid;
+  border-width: 5px;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+
+a::after {
+  content: ' (' attr(href) ')';
+}

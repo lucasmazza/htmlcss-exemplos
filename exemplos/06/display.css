@@ -1,0 +1,15 @@
+body {
+  padding: 20px;
+}
+
+p {
+  background-color: LimeGreen;
+}
+
+span {
+  background-color: LightBlue;
+}
+
+div > span {
+  display: inline-block;
+}

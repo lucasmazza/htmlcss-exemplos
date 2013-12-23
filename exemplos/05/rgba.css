@@ -1,0 +1,50 @@
+body { padding: 20px }
+
+ul {
+  border: 1px solid rgba(0,0,0,0.3);
+  color: white;
+  height: 35px;
+  list-style:none;
+  padding: 0;
+  width: 210px;
+}
+
+li {
+  border-left: 1px solid rgba(255,255,255, 0.3);
+  border-right: 1px solid rgba(0,0,0, 0.3);
+  float: left;
+  line-height: 35px;
+  font-size: 0.9em;
+  width: 50px;
+  text-align: center;
+}
+
+li:first-child { border-left: none; }
+li:last-child  { border-right: none; }
+
+ul.blue  { background-color: blue; }
+ul.red   { background-color:red; }
+ul.green { background-color: #008A00; }
+ul.gray  { background-color: #CCC; }
+
+figure {
+  position: relative;
+}
+
+img {
+  display: block;
+}
+
+figcaption {
+  bottom: 5px;
+  margin: 0 5px;
+  padding: 5px;
+  position: absolute;
+  width: 300px;
+}
+
+figcaption {
+  background-color: #000;
+  background-color: rgba(0,0,0,0.5);
+  color: #FFF;
+}

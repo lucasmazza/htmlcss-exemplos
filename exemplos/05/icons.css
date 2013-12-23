@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'IconicFill';
+  src: url('iconic_fill.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 40px;
+}
+
+.icon-next::after {
+  content: '\2192';
+  font-family: 'IconicFill';
+  margin-left: 10px;
+}
+
+h1.icon-next {
+  color: blue;
+}
+
+.icon-ok {
+  color: #489D00;
+}
+
+.icon-ok:before {
+  content: "\2718";
+  font-family: 'IconicFill';
+  margin-right: 10px;
+}
+
+.icon-invalid {
+  color: #990000;
+}
+
+.icon-invalid:before {
+  content: "\2714";
+  font-family: 'IconicFill';
+  margin-right: 10px;
+}

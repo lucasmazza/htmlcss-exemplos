@@ -1,0 +1,83 @@
+body {
+  padding: 50px;
+}
+
+.relative {
+  position: relative;
+  padding: 40px 0;
+}
+
+.loading {
+  animation: pulse 1.5s infinite;
+  background-color: #666;
+  border-radius: 50%;
+  font: 0/0 serif;
+  position: absolute;
+}
+
+.shaked {
+  background-color: #990000;
+  border: 1px solid #990000;
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  position: absolute;
+}
+
+.shaked:hover {
+  animation: shake 3s;
+}
+
+h1 {
+  animation: appear 2s 0 linear;
+  color: #000;
+  font-size: 1.4em;
+  text-align: center;
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes shake {
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-15px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(15px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+    top: 50px;
+    left: 50px;
+  }
+  100% {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    top: 35px;
+    left: 35px;
+  }
+}

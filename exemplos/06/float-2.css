@@ -1,0 +1,55 @@
+body {
+  padding: 30px;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.page {
+  background-color: #E8E8E8;
+  padding: 10px;
+  margin: 0 auto;
+  width: 940px;
+}
+
+.posts {
+  float: left;
+  width: 600px;
+}
+
+h1 {
+  float: left;
+  margin: 0 0 20px;
+}
+
+.timestamp {
+  background-color: #000;
+  color: #FFF;
+  float: right;
+  font-size: 0.9em;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+p {
+  clear: both;
+}
+
+aside {
+  background-color: #FFFBE4;
+  border: 1px solid #C9BC8F;
+  float: right;
+  padding: 10px;
+  width: 200px;
+}
+
+aside h3 {
+  margin: 0;
+}

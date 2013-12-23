@@ -1,0 +1,63 @@
+body { padding: 40px; }
+
+.help {
+  background-color: #F1EFE6;
+  border: 1px solid #D3CDAE;
+  font-size: 0.9em;
+  padding: 10px;
+  position: relative;
+  width: 300px;
+}
+
+.help::before {
+  border-color: transparent #D3CDAE transparent transparent;
+  border-style: solid;
+  border-width: 14px;
+  content: "";
+  left: -28px;
+  margin-top: -14px;
+  position: absolute;
+  top: 50%;
+}
+
+.help {
+  box-shadow: 3px 3px 3px #AAA;
+}
+
+input {
+  border: 1px solid #999;
+  box-shadow: 2px 2px 2px rgba(0,0,0, 0.25) inset;
+  padding: 2px 5px;
+}
+
+input:focus {
+  border-color: #35861B;
+  box-shadow: 0 0 5px #35861B, 2px 2px 2px rgba(0,0,0,0.25) inset;
+  outline: none;
+}
+
+.nav {
+  background-color: #B9522D;
+  height: 30px;
+  list-style:none;
+  padding: 0;
+  width: 210px;
+}
+
+.nav li {
+  float: left;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 70px;
+}
+
+.nav a {
+  color: white;
+}
+
+.nav .current {
+  background-color: #A64A28;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}

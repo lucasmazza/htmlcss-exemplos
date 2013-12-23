@@ -1,0 +1,97 @@
+body {
+  padding: 40px;
+}
+
+@font-face {
+  font-family: 'IconicFill';
+  src: url('iconic_fill.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.book {
+  background-color: #FAFAFA;
+  background-image: linear-gradient(#FAFAFA,#EEE);
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  padding: 10px;
+  width: 600px;
+}
+
+h1 {
+  color: #BD2C00;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.available {
+  background-color: #6CC644;
+  border-radius: 3px;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 3px 7px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+ul {
+  background-color: #56B4EF;
+  background-image: linear-gradient(top, #56B4EF,#148EDA);
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0, 0.3);
+  float: left;
+  list-style: none;
+  margin: 10px 10px 0 0;
+  padding: 0;
+  width: 230px;
+}
+
+.icon {
+  border-bottom: 1px solid rgba(0,0,0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: #FFF;
+  display: block;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
+}
+
+.icon.paper {
+  border-top: none;
+}
+
+.icon.package {
+  border-bottom: none;
+}
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.icon::before {
+  font-family: 'IconicFill';
+  margin: 0px 5px;
+}
+
+.paper::before {
+  content: "\e00b";
+}
+
+.digital::before {
+  content: "\e044";
+}
+
+.package::before {
+  content: "\e022";
+}
+
+.clear {
+  clear: both;
+}
