@@ -41,7 +41,7 @@ h2 {
 }
 ul {
   background-color: #56B4EF;
-  background-image: linear-gradient(top, #56B4EF,#148EDA);
+  background-image: linear-gradient(to bottom, #56B4EF,#148EDA);
   border-radius: 5px;
   border: 1px solid rgba(0,0,0, 0.3);
   float: left;
