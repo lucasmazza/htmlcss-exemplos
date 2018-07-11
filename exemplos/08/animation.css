@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-  animation: appear 2s 0 linear;
+  animation: appear 2s 0s linear;
   color: #000;
   font-size: 1.4em;
   text-align: center;
